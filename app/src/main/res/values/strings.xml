@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="hidden_view">This is hidden view</string>
+    <string name="play">Play</string>
+</resources>
