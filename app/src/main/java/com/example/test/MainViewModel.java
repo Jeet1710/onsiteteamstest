@@ -33,7 +33,8 @@ public class MainViewModel extends ViewModel {
         return adapter;
     }
 
-    public void toggleRecyclerView(boolean show, ViewGroup stillView, View animatedView) {
+    public void toggleRecyclerView( ViewGroup stillView, View animatedView) {
+        boolean show = Boolean.TRUE.equals(observeToggle.getValue());
         Transition transition = new Slide(Gravity.BOTTOM);
         transition.setDuration(600);
         transition.addTarget(animatedView);

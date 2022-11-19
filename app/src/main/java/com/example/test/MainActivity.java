@@ -13,8 +13,6 @@ import com.example.test.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     private MainViewModel viewModel;
-    private boolean toggleView = false;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickPlay(View view) {
-        viewModel.toggleRecyclerView(Boolean.TRUE.equals(viewModel.observeToggle.getValue()), binding.root, binding.recycler);
-
+        viewModel.toggleRecyclerView(binding.root, binding.recycler);
     }
 }
